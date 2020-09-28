@@ -4,11 +4,11 @@ namespace GitHubWebScrapper.Domain
 {
     public class GithubFileInfo
     {
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public string Extension { get; set; }
-        public float Bytes { get; set; }
-        public int Lines { get; set; }
+        public string Name { get; protected set; }
+        public string Url { get; protected set; }
+        public string Extension { get; protected set; }
+        public float Bytes { get; protected set; }
+        public int Lines { get; protected set; }
 
         public GithubFileInfo(string name, string url, string extension, float bytes, int lines)
         {
