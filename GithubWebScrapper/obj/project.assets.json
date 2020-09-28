@@ -341,11 +341,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafae\\source\\repos\\GithubWebScrapper\\GithubWebScrapper\\GithubWebScrapper.csproj",
+      "projectUniqueName": "C:\\ext-proj\\githubscrapper\\GithubWebScrapper\\GithubWebScrapper.csproj",
       "projectName": "GithubWebScrapper",
-      "projectPath": "C:\\Users\\rafae\\source\\repos\\GithubWebScrapper\\GithubWebScrapper\\GithubWebScrapper.csproj",
+      "projectPath": "C:\\ext-proj\\githubscrapper\\GithubWebScrapper\\GithubWebScrapper.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafae\\source\\repos\\GithubWebScrapper\\GithubWebScrapper\\obj\\",
+      "outputPath": "C:\\ext-proj\\githubscrapper\\GithubWebScrapper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",

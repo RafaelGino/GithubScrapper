@@ -17,13 +17,10 @@ namespace GithubWebScrapper._3___Infra
     {
         public IList<string> foldersUrl;
         List<GithubFileInfo> githubFileInfos;
-        HttpClient httpClient;
         public ScrapperRepository()
         {
             this.githubFileInfos = new List<GithubFileInfo>();
-            this.httpClient = new HttpClient();
         }
-
 
         public List<GithubFileInfo> ScrapGitHubUrl(string url)
         {
@@ -74,7 +71,16 @@ namespace GithubWebScrapper._3___Infra
 
         private string LoadPageFromUrl(string url)
         {
-            return this.httpClient.GetStringAsync(url).Result;
+            using (var client = new HttpClient())
+            {
+                var response = client.GetAsync(url).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    return response.Content.ReadAsStringAsync().Result;
+                }
+                return "";
+            }
+           
         }
         private List<string> LoadPageAdresses(string url)
         {

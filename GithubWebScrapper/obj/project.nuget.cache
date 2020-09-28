@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fD4Ay9mv/EtVlImQJRWFmUsnsfb6DWnanvutRAQDfEyf8NvTj0D1CbjIa1EL7+Atf6RKhrnBbKD/PoOpa7yfxg==",
+  "dgSpecHash": "GAX3O5oNhGzuUGA+Dnz+V/F2jLCHPui18wU1vE1O/sOob2a/oPx+pCJNh/UOTKMybpKzv5ni0DMbr06D5Tbnig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rafae\\source\\repos\\GithubWebScrapper\\GithubWebScrapper\\GithubWebScrapper.csproj",
+  "projectFilePath": "C:\\ext-proj\\githubscrapper\\GithubWebScrapper\\GithubWebScrapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.1.1\\microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
