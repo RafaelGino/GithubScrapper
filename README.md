@@ -1,5 +1,6 @@
-### Hi, I'm Rafael 
-#### I builded this API using .NET Core focusing on performance without using a third party library to manipulate the HTML.
+# Hi, I'm Rafael 
+*I builded this API using .NET Core focusing on performance without using a third party library to manipulate the HTML.*
+
 The app was deployed at [Heroku](http://githubwebscrapper.herokuapp.com/swagger/index.html) using [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 I avoided using regex as much as possible.
 I used only native classes to download and analyze the github html.
