@@ -14,7 +14,9 @@ As I used Swagger and Swagger UI for documentation, the API method is self-expla
 The project could have used dependency injection, a number of other design patterns and even better approaches to analyzing html, but within my available time it was what I managed to do.
 
 Returned Json:
+
 ![ReturnedJson ex](images/FormattedJson.png)
 
 Swagger:
+
 ![Swagger ex](images/Swagger.png)
