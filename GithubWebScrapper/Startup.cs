@@ -25,14 +25,13 @@ namespace GithubWebScrapper
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddApiVersioning(option => option.ReportApiVersions = true);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
                     Title = "WebScraping Github Api",
-                    Description = "Api to get lines and bytes grouped by extension from a given github page",
+                    Description = "Api to get lines and bytes grouped by extension from a given github page.",
                     TermsOfService = new Uri("https://github.com/RafaelGino"),
                     Contact = new OpenApiContact
                     {

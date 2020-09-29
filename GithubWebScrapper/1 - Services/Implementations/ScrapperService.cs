@@ -2,6 +2,7 @@
 using GithubWebScrapper._2___Domain.Repositories;
 using GithubWebScrapper._4___Shared;
 using GitHubWebScrapper.Domain;
+using GitHubWebScrapper.Shared;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,6 +20,7 @@ namespace GithubWebScrapper._1___Services.Implementations
         }
         public IEnumerable<GitHubWebScrapperResponse> GetGithubFilesGroupedByExtension(string url)
         {
+            ValidateUrl(url);
             var allFiles = _scrapperRepository.ScrapGitHubUrl(url);
             var data = MapData(allFiles);
             return data;
@@ -41,6 +43,14 @@ namespace GithubWebScrapper._1___Services.Implementations
                 Grouped.Add(new GitHubWebScrapperResponse(filesGrouped[i].Key, lines, bytes, filesGrouped[i]));
             }
             return Grouped;
+        }
+
+        public void ValidateUrl(string url)
+        {
+            if(!url.StartsWith(Constants.GITHUB_URL_BASE) && Uri.IsWellFormedUriString(url, UriKind.RelativeOrAbsolute))
+            {
+                throw new Exception("Not a valid GitHub URL");
+            }
         }
     }
 }

@@ -21,19 +21,23 @@ namespace GithubWebScrapper.Controllers
         /// </summary>
         /// <remarks>
         /// Return all files of a given repository, grouped by extension with total number lines and size.
+        /// Sample request:
+        ///
+        ///     POST 
+        ///     "https://github.com/RafaelGino/GithubScrapper"
         /// </remarks>
-        /// <param name="baseUrl">Github Repository Url</param>
+        /// <param name="baseUrl">Github Repository Url.</param>
         /// <returns></returns>
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
         [HttpPost("read-data-repository")]
-        public async Task<IActionResult> PaserUrl([FromBody] string baseUrl)
+        public async Task<IActionResult> PaserUrl([FromBody] InfoRequest request)
         {
-            if (string.IsNullOrEmpty(baseUrl))
+            if (string.IsNullOrEmpty(request.Url))
                 return BadRequest(ResponseApi.Empty);
 
-            var response = await Task.FromResult(_scrapperService.GetGithubFilesGroupedByExtension(baseUrl));
+            var response = await Task.FromResult(_scrapperService.GetGithubFilesGroupedByExtension(request.Url));
             return Ok(JsonConvert.SerializeObject(response));
         }
     }
