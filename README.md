@@ -1,5 +1,5 @@
 # Hi, I'm Rafael 
-*I builded this API using .NET Core focusing on performance without using a third party library to manipulate the HTML.*
+*I built this API using .NET Core focusing on performance without using a third party library to manipulate the HTML.*
 
 The app was deployed using a docker container at [Heroku](http://githubwebscrapper.herokuapp.com/swagger/index.html) using [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 
